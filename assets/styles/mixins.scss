@@ -1,0 +1,14 @@
+@mixin center-content($height: 100vh) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+  }
+  
+@mixin responsive-padding($mobile: $padding-base, $desktop: $padding-base) {
+    padding: $desktop;
+    
+    @media (max-width: $small-breakpoint) {
+        padding: $mobile;
+    }
+}
